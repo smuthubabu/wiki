@@ -10,7 +10,7 @@ Download the PBA for a [BIOS](https://github.com/Drive-Trust-Alliance/exec/blob/
 
  
 
-Optional but highly recommended:
+**Optional but highly recommended:**
 
 Test the PBA on your machine
 
@@ -18,7 +18,7 @@ Prepare and test the rescue image
 
  
 
-Set up the Drive:
+**Set up the Drive:**
 
 gunzip the PBA  (Windows users will need to use 7-zip)
 
@@ -34,7 +34,7 @@ sedutil-cli –setMBREnable on <password> <drive>
 
  
 
-Enable locking:
+**Enable locking:**
 
 sedutil-cli –enableLockingRange 0 <password> <drive>
 
