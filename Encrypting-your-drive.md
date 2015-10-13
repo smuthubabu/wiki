@@ -48,7 +48,7 @@ Power off the computer to lock the drive.  Power the computer on. The PBA should
 
  
 
-If you want to turn off Locking and the PBA:
+**If you want to turn off Locking and the PBA:**
 
 sedutil-cli –disableLockingRange 0 <password> <drive>
 
