@@ -1,12 +1,12 @@
-Getting the source
+**Getting the source**
 clone this repository.
 
-Windows
+**Windows**
 Only the Host management portion of sedutil can be built on windows.
 
 sedutil has a VIsual Studio solution you can use to select the architecture and build the executable. There are no external dependencies.
 
-Linux
+**Linux**
 To build sedutil on Linux you need to have a host that supports multiarch builds.
 sedutil requires both 32 & 64 bit ncurses, C and C++ libraries to build successfully.
 
