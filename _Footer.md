@@ -1,0 +1,1 @@
+Copywrite 2015 Bright Plaza Inc
