@@ -1,1 +1,1 @@
-Copywrite 2015 Bright Plaza Inc
+Copyright 2015 Bright Plaza Inc
