@@ -24,9 +24,9 @@ Action and Options | Description
 –revertLockingSP &lt;password&gt; &lt;device&gt; | Deactivate the Locking SP.  ERASES ALL DATA
 –setPassword &lt;password&gt; &lt;userid&gt; &lt;newpassword&gt; &lt;device&gt; | Change the password of the specified user in the Locking SP.
 –validatePBKDF2 | Test the password hashing functions output
-–setMBREnable &lt;on|off&gt; &lt;password&gt; &lt;device&gt; | Set the MBREnable flag on the device.  If this is on the device will present the shadow MBR to the BIOS/OS when it is powered up.
-–setMBRDone &lt;on|off&gt; &lt;password&gt; &lt;device&gt; | Set the MBRDone flag on the device.  If MBREnable is on this controls when to switch the drive out of shadowed state.
-–setLockingRange &lt;0-15&gt; &lt;ro|rw|lk&gt; &lt;password&gt; &lt;device&gt; | Modify the state of a locking range.
+–setMBREnable &lt;on&#124;off&gt; &lt;password&gt; &lt;device&gt; | Set the MBREnable flag on the device.  If this is on the device will present the shadow MBR to the BIOS/OS when it is powered up.
+–setMBRDone &lt;on&#124;off&gt; &lt;password&gt; &lt;device&gt; | Set the MBRDone flag on the device.  If MBREnable is on this controls when to switch the drive out of shadowed state.
+–setLockingRange &lt;0-15&gt; &lt;ro&#124;rw&#124;lk&gt; &lt;password&gt; &lt;device&gt; | Modify the state of a locking range.
 –enableLockingRange &lt;0-15&gt; &lt;password&gt; &lt;device&gt; | Activate a locking range
 –disableLockingRange &lt;0-15&gt; &lt;password&gt; &lt;device&gt; | Deactivate a locking range
 –setupLockingRange &lt;0-15&gt; &lt;startLBA&gt; &lt;#LBA&gt; &lt;password&gt; &lt;device&gt; | Set/Change the LBAs controlled by a locking range. Changing the locking range that controls a LBA will ERASE ALL THE DATA on that locking range.
