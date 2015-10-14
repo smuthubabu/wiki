@@ -2,7 +2,7 @@ To test the Rescue image on your machine you will need the Rescue image and a US
 
 Print out a copy of this page and the [Encrypting Page](https://github.com/Drive-Trust-Alliance/sedutil/wiki/Encrypting-your-drive) for reference.
 
-Download the Rescue Image
+Download the [Rescue Image](https://github.com/Drive-Trust-Alliance/exec/blob/master/Rescue.img.gz?raw=true)
 
      gunzip <rescuefile>  (windows users will need to use 7-zip)
 
