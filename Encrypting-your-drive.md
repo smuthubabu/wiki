@@ -12,7 +12,7 @@ Download the PBA for a [BIOS](https://github.com/Drive-Trust-Alliance/exec/blob/
 
 **Optional but highly recommended:**
 
-Test the PBA on your machine
+[Test the PBA on your machine](https://github.com/Drive-Trust-Alliance/sedutil/wiki/Test-the-PBA)
 
 Prepare and test the rescue image
 
