@@ -18,7 +18,7 @@ Boot the USB stick, you should be booted into a linux root shell.  The image is 
     sedutil-cli –scan
     sedutil-cli –query /dev/sda <== chose an OPAL compliant device
 
-You should see output similar to the example output.
+You should see output similar to the [example output](https://github.com/Drive-Trust-Alliance/sedutil/wiki/Sample-Output).
 
 You can either activate the locking while running on the rescue disk or reboot and activate it on your real OS.
 
