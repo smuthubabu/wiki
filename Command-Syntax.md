@@ -8,7 +8,7 @@
 Action and Options | Description
 -------------------| -----------
 -v | optional parameter to increase the verbosity (addition debugging information), one to five v’s
-–initialsetup &lt;password&gt; &lt;device&gt; | Prepare the drive for msed management.  This changes the default password on the drive, activates the LOCKING SP sets and up MBR shadowing. After this command the SID and Admin1 passwords are set to the password you entered and the global locking range is ready to be enabled.
+- –initialsetup &lt;password&gt; &lt;device&gt; | Prepare the drive for msed management.  This changes the default password on the drive, activates the LOCKING SP sets and up MBR shadowing. After this command the SID and Admin1 passwords are set to the password you entered and the global locking range is ready to be enabled.
 –setSIDPwd &lt;password&gt; &lt;newpassword&gt; &lt;device&gt; | Change the password of the SID user in the ADMIN SP
 -–setAdmin1Pwd &lt;password&gt; &lt;newpassword&gt; &lt;device&gt; | Change the password of the ADMIN1 user in the LOCKING SP
 -–loadPBAimage &lt;password&gt; &lt;pba file spec&gt; &lt;device&gt; | Load the PBA image to the shadow MBR table.  PBA visibility is controlled by –setMBREnable below.
