@@ -14,7 +14,7 @@ Download the PBA for a [BIOS](https://github.com/Drive-Trust-Alliance/exec/blob/
 
 [Test the PBA on your machine](https://github.com/Drive-Trust-Alliance/sedutil/wiki/Test-the-PBA)
 
-Prepare and test the rescue image
+[Prepare and test the rescue image](https://github.com/Drive-Trust-Alliance/sedutil/wiki/Test-the-Rescue-system)
 
  
 
