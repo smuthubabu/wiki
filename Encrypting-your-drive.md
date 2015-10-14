@@ -21,27 +21,22 @@ Download the PBA for a [BIOS](https://github.com/Drive-Trust-Alliance/exec/blob/
 **Set up the Drive:**
 
     gunzip the PBA  (Windows users will need to use 7-zip)
-    sedutil-cli –initialsetup <password> <drive>
+    sedutil-cli  -–initialsetup <password> <drive>
 
 If the drive is a boot drive:
 
-    sedutil-cli –loadPBAimage <password> <pbafilename>  <drive>
-    sedutil-cli –setMBREnable on <password> <drive>
+    sedutil-cli –-loadPBAimage <password> <pbafilename>  <drive>
+    sedutil-cli –-setMBREnable on <password> <drive>
 
 **Enable locking:**
 
-    sedutil-cli –enableLockingRange 0 <password> <drive>
+    sedutil-cli –-enableLockingRange 0 <password> <drive>
 
 **<drive> = \\.\PhysicalDrive? on windows and /dev/sd? on Linux
 
- 
-
 Power off the computer to lock the drive.  Power the computer on. The PBA should ask for your password, unlock the drive and chain-load the real OS on the drive you booted from.
-
- 
 
 **If you want to turn off Locking and the PBA:**
 
-sedutil-cli –disableLockingRange 0 <password> <drive>
-
-sedutil-cli –setMBREnable off <password> <drive>
+sedutil-cli -–disableLockingRange 0 <password> <drive>  
+sedutil-cli –-setMBREnable off <password> <drive>
