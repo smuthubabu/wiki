@@ -6,5 +6,5 @@ The DTA Open Source can be employed freely not only for higher security applicat
 
 See individual pages for usage instructions  
 [Encrypting your drive](https://github.com/Drive-Trust-Alliance/sedutil/wiki/Encrypting-your-drive)  
-[PSID Revert]()  
+[PSID Revert](https://github.com/Drive-Trust-Alliance/sedutil/wiki/PSID-Revert)  
 [FAQ]()
