@@ -1,6 +1,6 @@
 To test the Rescue image on your machine you will need the Rescue image and a USB stick/thumb drive.
 
-Print out a copy of this page and the Encrypting Page for reference.
+Print out a copy of this page and the [Encrypting Page](https://github.com/Drive-Trust-Alliance/sedutil/wiki/Encrypting-your-drive) for reference.
 
 Download the Rescue Image
 
