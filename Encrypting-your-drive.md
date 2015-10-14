@@ -1,6 +1,6 @@
 
 **Warning**  
-See the removing OPAL page for instructions on returning the drive to a non-OPAL managed state.  If you just want to turn off the locking and PBA see the steps at the end of this page.
+See the [Remove OPAL](https://github.com/Drive-Trust-Alliance/sedutil/wiki/Remove-OPAL) page for instructions on returning the drive to a non-OPAL managed state.  If you just want to turn off the locking and PBA see the steps at the end of this page.
 
  
 
