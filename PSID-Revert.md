@@ -23,4 +23,4 @@ redirect the output to a file and open an issue on GitHub.
 
 example:
 
-msed -vvvvv –-yesIreallywanttoERASEALLmydatausingthePSID <YOURPSID> \\.\PhysicalDrive? > revertlog.txt 2>&1
+sedutil-cli -vvvvv –-yesIreallywanttoERASEALLmydatausingthePSID <YOURPSID> \\.\PhysicalDrive? > revertlog.txt 2>&1
