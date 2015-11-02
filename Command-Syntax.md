@@ -2,12 +2,13 @@
 
 **General Usage:**
 
-    sedutil-cli <-v> <--action> <options> <device>
+    sedutil-cli <-v> <-n> <--action> <options> <device>
 
  
 Action and Options | Description
 -------------------| -----------
 -v | optional parameter to increase the verbosity (addition debugging information), one to five v’s  
+-n | optional parameter to pass the password to the drive in plaintext  
 initialsetup &lt;password&gt; &lt;device&gt; | Prepare the drive for msed management.  This changes the default password on the drive, activates the LOCKING SP sets and up MBR shadowing. After this command the SID and Admin1 passwords are set to the password you entered and the global locking range is ready to be enabled.
 setSIDPwd &lt;password&gt; &lt;newpassword&gt; &lt;device&gt; | Change the password of the SID user in the ADMIN SP
 setAdmin1Pwd &lt;password&gt; &lt;newpassword&gt; &lt;device&gt; | Change the password of the ADMIN1 user in the LOCKING SP
