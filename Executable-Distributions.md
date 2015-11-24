@@ -1,6 +1,6 @@
 File | Description  
 ---- | -----------   
-[sedutil_WIN.zip](https://github.com/Drive-Trust-Alliance/exec/blob/master/sedutil_WIN.zip?raw=true) | Windows binary distribution  Requires the VS2012 run time DLLs.  Available here https://www.microsoft.com/en-us/download/details.aspx?id=48145
+[sedutil_WIN.zip](https://github.com/Drive-Trust-Alliance/exec/blob/master/sedutil_WIN.zip?raw=true) | Windows binary distribution  Requires the VS2015 run time DLLs.  Available here https://www.microsoft.com/en-us/download/details.aspx?id=48145
 [sedutil_LINUX.tgz](https://github.com/Drive-Trust-Alliance/exec/blob/master/sedutil_LINUX.tgz?raw=true) | Linux binary distribution
 [LINUXPBARelease.img.gz](https://github.com/Drive-Trust-Alliance/exec/blob/master/LINUXPBARelease.img.gz?raw=true) | PBA for bios based systems
 [UEFI64_Release.img.gz](https://github.com/Drive-Trust-Alliance/exec/blob/master/UEFI64_Release.img.gz?raw=true) | PBA for 64bit UEFI systems
