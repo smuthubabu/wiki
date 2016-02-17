@@ -16,7 +16,7 @@ Two reasons:
 
 Interaction with the OPAL subsystem is a low priority task, this is actually a good thing as you would not want your real I/O slowed down during OPAL configuration.  Typical times to issue an OPAL command and receive the response vary wildly, the Crucial M500 drive responds almost instantly while the Seagate ST500-LT025 takes 50-100ms  so msed waits 25ms before looking for a response and 25ms before looking again if the response is not ready. This means that a write to an OPAL configuration table can take 5-20 times longer that a typical disk write.
 
-To keep the code as uncomplicated as possible msed uses the minimum buffer size defined in the OPAL SSCs even it the drive is capable of using larger buffers. Smaller buffers mean more transfer operations.  The higher number of operations combined with the long operation time above means slow PBA loading.
+To keep the code as uncomplicated as possible sedutil uses the minimum buffer size defined in the OPAL SSCs even it the drive is capable of using larger buffers. Smaller buffers mean more transfer operations.  The higher number of operations combined with the long operation time above means slow PBA loading.
 
 The good news is that you shouldn't have to load the PBA often.  
 
