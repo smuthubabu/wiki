@@ -15,8 +15,8 @@ Windows:  use Win32DiskImager from sourceforge to write the image to the USB sti
 
 Boot the USB stick, you should be booted into a linux root shell.  The image is a TinyCore Linux image that has been remastered to include sedutil.   When you get the root prompt enter:
 
-    sedutil-cli –scan
-    sedutil-cli –query /dev/sda <== chose an OPAL compliant device
+    sedutil-cli –-scan
+    sedutil-cli –-query /dev/sda <== chose an OPAL compliant device
 
 You should see output similar to the [example output](https://github.com/Drive-Trust-Alliance/sedutil/wiki/Sample-Output).
 
