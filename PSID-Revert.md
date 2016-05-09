@@ -9,12 +9,12 @@ The PSID is a 32 character password that can be used to prove you have physical 
 
 These steps should allow you use your drive again:
 
-1. sedutil-cli -–scan <- SCAN to find Opal Drive (you should a 1 or 2 next the the drive)
-2. sedutil-cli -–query \\.\PhysicalDrive? <–this will show the Opal status
+1. `sedutil-cli -–scan` <- SCAN to find Opal Drive (you should a 1 or 2 next the the drive)
+2. `sedutil-cli -–query \\.\PhysicalDrive?` <–this will show the Opal status
          look at the locking  feature and see if it is Locked = Y  or LockingEnabled = Y
          that’s a good sign that this should work
 
-3. sedutil-cli -–yesIreallywanttoERASEALLmydatausingthePSID <YOURPSID> \\.\PhysicalDrive?
+3. `sedutil-cli -–yesIreallywanttoERASEALLmydatausingthePSID <YOURPSID> \\.\PhysicalDrive?`
 4. You should see INFO: revertTper completed successfully.
 
 If you get a message that says NOT_AUTHORIZED you entered the PSID incorrectly.
