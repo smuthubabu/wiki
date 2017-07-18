@@ -6,7 +6,7 @@ See the [Remove OPAL](https://github.com/Drive-Trust-Alliance/sedutil/wiki/Remov
 
 Download the host program for [Windows](https://github.com/Drive-Trust-Alliance/exec/blob/master/sedutil_WIN.zip?raw=true) or [Linux](https://github.com/Drive-Trust-Alliance/exec/blob/master/sedutil_LINUX.tgz?raw=true)
 
-Download the PBA for a [BIOS](https://github.com/Drive-Trust-Alliance/exec/blob/master/LINUXPBARelease.img.gz?raw=true) or [64bit UEFI](https://github.com/Drive-Trust-Alliance/exec/blob/master/UEFI64_Release.img.gz?raw=true) machine (UEFI support currently requires that Secure Boot be turned off.)
+Download the PBA for a [BIOS](https://github.com/Drive-Trust-Alliance/exec/blob/master/BIOS32.img.gz?raw=true) or [64bit UEFI](https://github.com/Drive-Trust-Alliance/exec/blob/master/UEFI64.img.gz?raw=true) machine (UEFI support currently requires that Secure Boot be turned off.)
 
  
 
