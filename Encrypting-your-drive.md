@@ -34,7 +34,7 @@ If the drive is a boot drive:
 
 **<drive> = \\.\PhysicalDrive? on windows and /dev/sd? on Linux
 
-Power off the computer to lock the drive.  Power the computer on. The PBA should ask for your password, unlock the drive and chain-load the real OS on the drive you booted from.
+Power off the computer to lock the drive.  Power the computer on. The PBA should ask for your password, unlock the drive and reboot the machine.
 
 **If you want to turn off Locking and the PBA:**
 
