@@ -8,12 +8,12 @@ Download the [Rescue Image](https://github.com/Drive-Trust-Alliance/exec/blob/ma
 
 Transfer the Rescue image to the USB stick.
 
-Linux:  dd if=RESCUE32.img.gz of=/dev/sd?     (/dev/sd? is the USB stick base device node, no number)
+Linux:  dd if=RESCUE32.img.gz of=/dev/sd?     (/dev/sd? is the USB stick base device node, no number)  
 Windows:  use Win32DiskImager from sourceforge to write the image to the USB stick
 
  
 
-Boot the USB stick, you should be booted into a linux system.  Login as root, there is no password. The image is a Linux image that contains sedutil-cli, linuxpba, BIOS32-<version>.img.gz and BIOS64-<version>.img.gz.   When you get the root prompt enter:
+Boot the USB stick, you should be booted into a linux system.  Login as root, there is no password. The image is a Linux system that contains sedutil-cli, linuxpba, BIOS32-x.xx.img.gz and UEFI64-x.xx.img.gz.   When you get the root prompt enter:
 
     #sedutil-cli –-scan
     #sedutil-cli –-query /dev/sda <== chose an OPAL compliant device
