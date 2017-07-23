@@ -1,1 +1,1 @@
-Copyright 2015-2016 Bright Plaza Inc
+Copyright 2015-2017 Bright Plaza Inc
