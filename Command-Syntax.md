@@ -1,4 +1,10 @@
-
+```
+**Note to users of non us_english keyboards**
+Both the PBA and rescue systems use the us_english keyboard.  This can cause issues 
+when setting the password on your normal operating system if you use another 
+keyboard mapping.  To make sure the PBA recognizes your password you are encouraged
+to set up you drive from the rescue system.
+```
 
 **General Usage:**
 
