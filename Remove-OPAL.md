@@ -5,7 +5,7 @@ This process has been tested on the following drive/firmware versions:
     ST500LT025-1DH142                        0001SDM7  
     Samsung SSD 850 EVO 500GB                EMT01B6Q  
 
-even though this procedure is part of the OPAL specification there is no guarantee that msed is compatible with the OPAL firmware on all drives.
+even though this procedure is part of the OPAL specification there is no guarantee that sedutil is compatible with the OPAL firmware on all drives.
 
 1. revert the locking SP.  
 sedutil-cli --revertnoerase {Admin1Password} {drive}
