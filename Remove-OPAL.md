@@ -3,7 +3,8 @@ The steps outlined below will allow you to turn off the opal locking and return 
 This process has been tested on the following drive/firmware versions:  
     Crucial_CT120M500SSD3                    MU05  
     ST500LT025-1DH142                        0001SDM7  
-    Samsung SSD 850 EVO 500GB                EMT01B6Q  
+    Samsung SSD 850 EVO 500GB                EMT01B6Q 
+    Samsung SSD 960 EVO 250GB                2B7QCXE7
 
 even though this procedure is part of the OPAL specification there is no guarantee that sedutil is compatible with the OPAL firmware on all drives.
 
