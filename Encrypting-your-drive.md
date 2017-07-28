@@ -1,12 +1,12 @@
-```
-**Note to users of non us_english keyboards**
-Both the PBA and rescue systems use the us_english keyboard.  This can cause issues 
+# **Note to users of non us_english keyboards**  
+**Both the PBA and rescue systems use the us_english keyboard.  This can cause issues 
 when setting the password on your normal operating system if you use another 
 keyboard mapping.  To make sure the PBA recognizes your password you are encouraged
-to set up you drive from the rescue system as described on this page.
-```  
+to set up you drive from the rescue system as described on this page.**
   
-Download and prepare the rescue system for a [BIOS](https://github.com/Drive-Trust-Alliance/exec/blob/master/RESCUE32.img.gz?raw=true) or [64bit UEFI](https://github.com/Drive-Trust-Alliance/exec/blob/master/RESCUE64.img.gz?raw=true) machine (UEFI support currently requires that Secure Boot be turned off.)  
+## Prepare a bootable rescue system
+Download the rescue system for [BIOS](https://github.com/Drive-Trust-Alliance/exec/blob/master/RESCUE32.img.gz?raw=true) or [64bit UEFI](https://github.com/Drive-Trust-Alliance/exec/blob/master/RESCUE64.img.gz?raw=true) machine  
+**\*                                     UEFI support currently requires that Secure Boot be turned off**  
 
   Decompress the Rescue system:  (Windows users will need to use 7-zip)      
      `gunzip RESCUE32.img.gz`    
@@ -23,7 +23,8 @@ Download and prepare the rescue system for a [BIOS](https://github.com/Drive-Tru
 Boot the USB thumb drive with the rescue system on it.
 You will see the Login prompt, enter "root" there is no password so you will get a root shell prompt
 
-Test sedutil by entering the command `sedutil-cli --scan`  
+## Test sedutil 
+enter the command `sedutil-cli --scan`  
 Expected Output:    
 ```
 #sedutil-cli --scan
@@ -41,7 +42,8 @@ Verify that your drive has a 2 in the second column indicating OPAL 2 support.
 If it doesn't **do not proceed**, there is something that is preventing sedutil from
 supporting your drive.  If you continue you may **erase all of your data**
 
-Test the PBA by entering the command `linuxpba` and entering a pass-phrase of `debug`. If you don't use debug as the pass-phrase your system will reboot!   
+## Test the PBA  
+Enter the command `linuxpba` and use a pass-phrase of `debug`. If you don't use debug as the pass-phrase your system will reboot!   
 Expected Output:  
 ```
 #linuxpba 
@@ -58,12 +60,13 @@ Drive /dev/sdd   Samsung SSD 850 EVO 250GB                is OPAL NOT LOCKED
 ```
 Verify that Your drive is listed and the that the PBA reports it as \"is OPAL\"  
   
-**Issuing the commands in the steps that follow will enable OPAL locking.  If you have a problem you will need to follow the steps at the end of this page to either disable or remove OPAL locking**  
+**Issuing the commands in the steps that follow will enable OPAL locking.  If you have a problem you will need to follow the steps at the end of this page ([Recovery Information](https://github.com/Drive-Trust-Alliance/sedutil/wiki/Encrypting-your-drive/_edit#recovery-information)) to either disable or remove OPAL locking**  
   
 
 **The following steps use /dev/sdc as the device and UEFI64-1.15.img.gz for the PBA image, substitute the proper /dev/sd? for your drive and the proper PBA name for your system** 
    
-Enable locking and the PBA by issuing these commands:  **(Use the password of `debug` for this test, it will be changed later)**  
+## Enable locking and the PBA 
+Enter the commands below:  **(Use the password of `debug` for this test, it will be changed later)**  
 `sedutil-cli --initialsetup debug /dev/sdc`  
 `sedutil-cli --enablelockingrange 0 debug /dev/sdc`  
 `sedutil-cli --setlockingrange 0 lk debug /dev/sdc`  
@@ -96,7 +99,8 @@ Expected Output:
 - 14:14:04.499 INFO: PBA image  /usr/sedutil/UEFI64.img written to /dev/sdc
 #
 ```
-Test the PBA (yes again) by entering the command `linuxpba` and entering a pass-phrase of `debug`  
+## Test the PBA (yes again)  
+Enter the command `linuxpba` and use a pass-phrase of `debug`  
 This second test will verify that your drive really does get unlocked.  
 Expected Output:  
 ```
@@ -117,7 +121,8 @@ Drive /dev/sdd   Samsung SSD 850 EVO 250GB                is OPAL NOT LOCKED
 Verify that the PBA unlocks your drive, it should say "is OPAL Unlocked"
 If it doesn't then you will need to follow the steps at the end of this page to either remove OPAL or disable locking.
 
-Set a real password.  The SID and Admin1 passwords do not have to match but it makes things easier.  
+## Set a real password  
+The SID and Admin1 passwords do not have to match but it makes things easier.  
 `sedutil-cli --setsidpassword debug yourrealpassword /dev/sdc`  
 `sedutil-cli --setadmin1pwd  debug yourrealpassword /dev/sdc`    
 
@@ -136,10 +141,11 @@ Expected Output:
 - 14:22:21.590 INFO: MBRDone set on 
 ```
   
-You have now set up your system to use OPAL encryption and locking.  
-You now need to **COMPLETLY POWER DOWN YOUR SYSTEM**  
+## Your drive in now using OPAL locking.    
+You now need to **COMPLETELY POWER DOWN YOUR SYSTEM**  
 This will lock the drive so that when you restart your system it will boot the PBA.  
 
+## Recovery information:  
 
 If there is an issue after enabling locking you can either disable locking or remove OPAL to continue using your drive without locking.
 
