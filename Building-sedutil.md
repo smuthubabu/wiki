@@ -8,10 +8,12 @@ sedutil has a VIsual Studio solution you can use to select the architecture and 
 
 **Linux**  
 To build sedutil on Linux you need to have a host that supports multiarch builds.
-sedutil requires both 32 & 64 bit ncurses, C and C++ libraries to build successfully.
+sedutil requires both 32 & 64 bit C and C++ libraries to build successfully.
 
 There is a NetBeans project to build Linux host management program portion of sedutil included in the repo, if you wish to build from the command line you can use make and select the configuration to build.
 make CONF=”” build where conf is one of the NetBeans configurations.
+
+There is also an autotools based make system in the project root.  This is the standard ./configure, make, make install that is expected with autotools.
 
 To build the Syslinux based PBA:
 cd /dir/containing/syslinux
