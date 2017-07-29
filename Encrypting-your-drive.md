@@ -8,7 +8,7 @@ to set up you drive from the rescue system as described on this page.**
 Download the rescue system for [BIOS](https://github.com/Drive-Trust-Alliance/exec/blob/master/RESCUE32.img.gz?raw=true) or [64bit UEFI](https://github.com/Drive-Trust-Alliance/exec/blob/master/RESCUE64.img.gz?raw=true) machine  
 **\*                                     UEFI support currently requires that Secure Boot be turned off**  
 
-  Decompress the Rescue system:  (Windows users will need to use 7-zip)      
+  Decompress the Rescue system:  (Windows users will need to use [7-zip](http://www.7-zip.org/download.html))      
      `gunzip RESCUE32.img.gz`    
        --or--  
      `gunzip RESCUE64.img.gz`  
@@ -18,7 +18,7 @@ Download the rescue system for [BIOS](https://github.com/Drive-Trust-Alliance/ex
   Linux:  dd if=RESCUE32.img of=/dev/sd?     (/dev/sd? is the USB stick base device node, no number)  
                --or--  
         dd if=RESCUE64.img of=/dev/sd?   
-  Windows:  use Win32DiskImager from sourceforge to write the image to the USB stick
+  Windows:  use [Win32DiskImager](https://sourceforge.net/projects/win32diskimager/) from sourceforge to write the image to the USB stick
   
 Boot the USB thumb drive with the rescue system on it.
 You will see the Login prompt, enter "root" there is no password so you will get a root shell prompt
