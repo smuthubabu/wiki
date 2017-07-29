@@ -22,7 +22,7 @@ Download the rescue system for [BIOS](https://github.com/Drive-Trust-Alliance/ex
   
 Boot the USB thumb drive with the rescue system on it.
 You will see the Login prompt, enter "root" there is no password so you will get a root shell prompt
-
+# **ALL** steps below should be run on the **RESCUE SYSTEM**
 ## Test sedutil 
 enter the command `sedutil-cli --scan`  
 Expected Output:    
