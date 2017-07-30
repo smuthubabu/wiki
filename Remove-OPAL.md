@@ -3,7 +3,7 @@ The steps outlined below will allow you to turn off the opal locking and return 
 This process has been tested on the following drive/firmware versions:  
     Crucial_CT120M500SSD3                    MU05  
     ST500LT025-1DH142                        0001SDM7  
-    Samsung SSD 850 EVO 500GB                EMT01B6Q 
+    Samsung SSD 850 EVO 500GB                EMT01B6Q   
     Samsung SSD 960 EVO 250GB                2B7QCXE7
 
 even though this procedure is part of the OPAL specification there is no guarantee that sedutil is compatible with the OPAL firmware on all drives.
@@ -22,6 +22,6 @@ look at the query output and make certain that the Locking section shows locking
 
 If the query does not show lockingEnabled=N DO NOT CONTINUE with the next step, if you do all your data will be erased.
 
-3. msedutil-cli --reverttper {SIDpassword} {drive}
+3. sedutil-cli --reverttper {SIDpassword} {drive}
 
 When this is finished the drive will be in a non-opal managed state.  This would allow you to do anything that you could have done before starting OPAL management under OPAL.  You can also reinitiate OPAL management if you wish.
